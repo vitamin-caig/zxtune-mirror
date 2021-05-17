@@ -29,7 +29,7 @@ import app.zxtune.fs.http.MultisourceHttpProvider;
  * http://www.exotica.org.uk/mediawiki/extensions/ExoticASearch/Modland_xbmc.php
  * but it seems to be not working and has no such wide catalogue as http gate does.
  */
-public class RemoteCatalog extends Catalog {
+public class RemoteCatalog implements Catalog {
 
   private static final String TAG = RemoteCatalog.class.getName();
 
