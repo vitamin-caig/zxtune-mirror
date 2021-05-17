@@ -14,7 +14,7 @@ import app.zxtune.fs.dbhelpers.QueryCommand;
 import app.zxtune.fs.dbhelpers.Timestamps;
 import app.zxtune.fs.dbhelpers.Transaction;
 
-final class CachingCatalog extends Catalog {
+final class CachingCatalog implements Catalog {
 
   private final static TimeStamp DIR_TTL = TimeStamp.createFrom(1, TimeUnit.DAYS);
 

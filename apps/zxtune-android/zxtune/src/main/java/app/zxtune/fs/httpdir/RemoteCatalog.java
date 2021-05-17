@@ -14,7 +14,7 @@ import java.util.Locale;
 import app.zxtune.fs.HtmlUtils;
 import app.zxtune.fs.http.MultisourceHttpProvider;
 
-public class RemoteCatalog extends Catalog {
+public class RemoteCatalog implements Catalog {
 
   private final MultisourceHttpProvider http;
 
