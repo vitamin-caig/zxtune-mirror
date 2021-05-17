@@ -15,7 +15,7 @@ import app.zxtune.fs.dbhelpers.QueryCommand;
 import app.zxtune.fs.dbhelpers.Timestamps;
 import app.zxtune.fs.dbhelpers.Transaction;
 
-final public class CachingCatalog extends Catalog {
+final public class CachingCatalog implements Catalog {
 
   private static final String TAG = CachingCatalog.class.getName();
 
