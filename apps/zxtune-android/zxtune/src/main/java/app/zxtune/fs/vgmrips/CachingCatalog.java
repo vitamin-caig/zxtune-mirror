@@ -13,7 +13,7 @@ import app.zxtune.fs.dbhelpers.QueryCommand;
 import app.zxtune.fs.dbhelpers.Timestamps;
 import app.zxtune.fs.dbhelpers.Transaction;
 
-class CachingCatalog extends Catalog {
+class CachingCatalog implements Catalog {
 
   private final TimeStamp GROUPS_TTL = days(1);
   private final TimeStamp GROUP_PACKS_TTL = days(1);

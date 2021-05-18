@@ -20,7 +20,7 @@ import app.zxtune.utils.ProgressCallback;
 import app.zxtune.fs.api.Cdn;
 import app.zxtune.fs.http.MultisourceHttpProvider;
 
-public class RemoteCatalog extends Catalog {
+public class RemoteCatalog implements Catalog {
 
   private final MultisourceHttpProvider http;
   private final Grouping compaines;
