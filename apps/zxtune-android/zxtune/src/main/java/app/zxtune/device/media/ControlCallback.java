@@ -54,7 +54,7 @@ class ControlCallback extends MediaSessionCompat.Callback {
     this.ctx = ctx;
     this.manager = (AudioManager) ctx.getSystemService(Context.AUDIO_SERVICE);
     this.focusListener = new AudioFocusChangeListener();
-    this.noisyConnection = new AtomicReference<>(ReleaseableStub.instance());
+    this.noisyConnection = new AtomicReference<>(ReleaseableStub.INSTANCE);
     this.svc = svc;
     this.ctrl = svc.getPlaybackControl();
     this.seek = svc.getSeekControl();
@@ -224,6 +224,6 @@ class ControlCallback extends MediaSessionCompat.Callback {
   }
 
   private void unregisterNoisyReceiver() {
-    noisyConnection.getAndSet(ReleaseableStub.instance()).release();
+    noisyConnection.getAndSet(ReleaseableStub.INSTANCE).release();
   }
 }
