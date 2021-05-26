@@ -13,7 +13,7 @@ import app.zxtune.core.PropertiesContainer;
 import app.zxtune.core.ResolvingException;
 import app.zxtune.utils.ProgressCallback;
 
-class DelayLoadApi extends Api {
+class DelayLoadApi implements Api {
 
   private static final String TAG = DelayLoadApi.class.getName();
 
@@ -100,7 +100,7 @@ class DelayLoadApi extends Api {
     return ref.get().getOptions();
   }
 
-  static class ErrorApi extends Api {
+  static class ErrorApi implements Api {
 
     private final RuntimeException error;
 
